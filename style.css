@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Space Mono", monospace;
+}
+
+.container {
+  height: 95vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: hsl(185, 41%, 84%);
+}
+
+.splitter-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: white;
+  border-radius: 25px;
+  margin-top: 1.7rem;
+}
+
+.left-container {
+  padding: 2rem;
+}
+
+.bill {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+
+#custom::placeholder {
+  font-weight: bold;
+  color: hsl(186, 14%, 43%);
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+input {
+  color: hsl(183, 100%, 15%);
+  background-color: hsl(189, 41%, 97%);
+  font-weight: bold;
+  padding: 0.65rem;
+  border: none;
+  font-size: 1.2rem;
+}
+
+.select {
+  display: flex;
+  flex-direction: column;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(3rem, 8rem));
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 1rem;
+}
+
+.tip {
+  background-color: hsl(183, 100%, 15%);
+  padding: 0.55rem 0.85rem;
+  border-radius: 6px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.people {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.5rem;
+}
+.right-container {
+  padding: 2rem;
+}
+
+.tip-information {
+  background-color: hsl(183, 100%, 15%);
+  height: 100%;
+  border-radius: 25px;
+  padding: 2rem;
+}
+.tip-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.attribution {
+  height: 5vh;
+}
+
+.total-tip,
+.total {
+  font-size: 3.6rem;
+  font-weight: bold;
+  color: hsl(172, 67%, 45%);
+}
+
+.reset {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-top: 4rem;
+  cursor: pointer;
+}
+
+.person {
+  font-weight: bold;
+  color: hsl(186, 14%, 43%);
+}
+
+.amount {
+  color: white;
+  font-weight: bold;
+}
