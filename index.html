@@ -23,7 +23,13 @@
         <div class="left-container">
           <div class="bill">
             <label for="bill">Bill</label>
-            <input type="text" id="bill" placeholder="Amount" />
+            <input
+              type="number"
+              min="1"
+              id="bill"
+              placeholder="Amount"
+              class="bill-amount"
+            />
           </div>
           <div class="select">
             <p>Select tip %</p>
@@ -33,12 +39,24 @@
               <span class="tip">15%</span>
               <span class="tip">25%</span>
               <span class="tip">50%</span>
-              <input type="text" placeholder="Custom" id="custom" />
+              <input
+                type="number"
+                min="1"
+                placeholder="Custom"
+                id="custom"
+                class="custom"
+              />
             </div>
           </div>
           <div class="people">
             <label for="people">Number of people</label>
-            <input type="text" id="people" placeholder="How many people?" />
+            <input
+              type="number"
+              min="1"
+              id="people"
+              placeholder="How many people?"
+              class="people-tip"
+            />
           </div>
         </div>
         <div class="right-container">
@@ -48,14 +66,14 @@
                 <p class="amount">Tip amount</p>
                 <p class="person">/ person</p>
               </div>
-              <div class="total-tip">$4.28</div>
+              <div class="total-tip">$</div>
             </div>
             <div class="tip-total">
               <div class="tip-amount">
                 <p class="amount">Total</p>
                 <p class="person">/ person</p>
               </div>
-              <div class="total">$4.28</div>
+              <div class="total">$</div>
             </div>
             <button class="reset">Reset</button>
           </div>

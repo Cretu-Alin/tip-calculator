@@ -74,6 +74,14 @@ input {
   align-items: center;
   cursor: pointer;
 }
+
+.tip:hover{
+  background-color: hsl(172, 67%, 45%)
+}
+.active{
+  background-color: blue;
+}
+
 .people {
   display: flex;
   flex-direction: column;
@@ -89,6 +97,8 @@ input {
   border-radius: 25px;
   padding: 2rem;
 }
+
+
 .tip-total {
   display: flex;
   justify-content: space-between;
