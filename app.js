@@ -41,7 +41,6 @@ const calculateTipPercentage = (param) => {
   const lastChar = param.charAt(param.length - 1);
   if (lastChar === "%") {
     tip = Number(param.slice(0, -1) / 100);
-    console.log(tip);
   } else {
     tip = Number(param / 100);
   }
